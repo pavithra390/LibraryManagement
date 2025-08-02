@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: BOOK-SERVICE
+  datasource:
+    url: jdbc:mariadb://localhost:2001/book_db
+    username: root
+    password: Pavi
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 3333
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
