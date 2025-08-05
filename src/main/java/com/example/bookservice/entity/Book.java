@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 @Table
 public class Book {
     @Id
+    //@Id indicating that with help of this id we can retrieve single record
     @Column
     Integer bookId;
     @Column
