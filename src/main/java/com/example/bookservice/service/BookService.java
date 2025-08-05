@@ -9,6 +9,7 @@ import java.util.Optional;
 @Service
 public class BookService {
     @Autowired
+            //injecting repo layer using @Autowired annotation
     BookRepo bookRepo;
     public void addingBook(Book book) {
         bookRepo.save(book);
