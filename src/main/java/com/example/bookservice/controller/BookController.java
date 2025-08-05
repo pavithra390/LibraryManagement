@@ -9,6 +9,7 @@ import java.util.Optional;
 @RestController
 public class BookController {
     @Autowired
+    //injecting service layer using @Autowired annotation
     private BookService bookService;
 
     @PostMapping("/addingBook")
